@@ -11,17 +11,46 @@
     <header>
         <img src="./img/logo_senai.png" alt="logo senai">
         <input id="pesquisar" type="text" placeholder="Digite o nome do contato">
-        <button>Novo Contato</button>
+        <button class="button" id="novo-contato" >Novo Contato</button>
     </header>
-    <main>
-        <div class="container" id="container">
-            <!-- <div class="card-contato" >
-                <img src="./img/avatar1.avif" alt="">
-                <h2>Igor</h2>
-                <p>(11) 9 2121-9898</p>
-            </div> -->
-                
-        </div>
+    <main class="card-show">
+        <div class="container" id="container"></div>
+        <!-- ag form para dizer que la terá um formulario (mais pela semantica) -->
+        <form>
+            <div class="preview" >
+                <input class="preview-input" type="file" accept="image/*" name="" id="foto">
+                <label class="preview-label" for="foto"></label>
+                <img class="preview-image" id="preview-image" src="./img/preview_icon.png" alt="">
+            </div>
+            <div class="input-container" > 
+                <div class="input" >
+                    <label for="">Nome:</label>
+                    <input class="input-text" id="nome" type="text">
+                </div>
+                <div class="input" >
+                    <label for="">Email:</label>
+                    <input class="input-text" id="email" type="text">
+                </div>
+                <div class="input" >
+                    <label for="">Celular:</label>
+                    <input class="input-text" id="celular" type="text">
+                </div>
+                <div class="input" >
+                    <label for="">Endereço:</label>
+                    <input class="input-text" id="endereco" type="text">
+                </div>
+                <div class="input" >
+                    <label for="">Cidade:</label>
+                    <input class="input-text" id="cidade" type="text">
+                </div>
+            </div>
+            <div class="button-container">
+                <button type="button" class="button" id="editar" >Editar</button>
+                <button type="button" class="button" id="deletar" >Deletar</button>
+                <button type="button" class="button" id="salvar" >Salvar</button>
+                <button type="button" class="button" id="cancelar" >Cancelar</button>
+            </div>
+        </form>
     </main>
 </body>
 </html>
